@@ -5,21 +5,21 @@
 class TerminalAgent < Formula
   desc "An LLM Agent to help you from and within the terminal"
   homepage "https://github.com/laszukdawid/terminal-agent"
-  version "0.12.1"
+  version "0.12.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/laszukdawid/terminal-agent/releases/download/v0.12.1/terminal-agent_Darwin_x86_64.tar.gz"
-      sha256 "7bda1dae61a7d744148720673c95775af807e8fae34448d690cdfe4808d50fd5"
+      url "https://github.com/laszukdawid/terminal-agent/releases/download/v0.12.2/terminal-agent_Darwin_x86_64.tar.gz"
+      sha256 "e1388fa969413881976cee17d348fc6a42b1292d54e30784a6f084a2904f12fe"
 
       define_method(:install) do
         bin.install "agent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/laszukdawid/terminal-agent/releases/download/v0.12.1/terminal-agent_Darwin_arm64.tar.gz"
-      sha256 "420e0a09e1a099f0c928eac8013727406a6fc508cfc2f56d87c68a87244a0985"
+      url "https://github.com/laszukdawid/terminal-agent/releases/download/v0.12.2/terminal-agent_Darwin_arm64.tar.gz"
+      sha256 "fefefdfbc8092ec5ca61c83f08e21f3cb9b31de4c0b144c9001172fdfbd1d430"
 
       define_method(:install) do
         bin.install "agent"
@@ -29,15 +29,15 @@ class TerminalAgent < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/laszukdawid/terminal-agent/releases/download/v0.12.1/terminal-agent_Linux_x86_64.tar.gz"
-      sha256 "7523d3a6f3a8a71f35381cf0dd266e40a2efb6ea955bbd1075907c4ed2fa3b32"
+      url "https://github.com/laszukdawid/terminal-agent/releases/download/v0.12.2/terminal-agent_Linux_x86_64.tar.gz"
+      sha256 "fd01412190f18ece20ff68662057fff6c84955113dc5b598688c464d2a8affb4"
       define_method(:install) do
         bin.install "agent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/laszukdawid/terminal-agent/releases/download/v0.12.1/terminal-agent_Linux_arm64.tar.gz"
-      sha256 "832740310a4d0af99ad23583393d847e1dd59ad012d03bc05d99988c7ccaaed4"
+      url "https://github.com/laszukdawid/terminal-agent/releases/download/v0.12.2/terminal-agent_Linux_arm64.tar.gz"
+      sha256 "c4b04f9b95933bc3abde0f39ec9554f7f4a67f14e441aa867b603a6d6f443b17"
       define_method(:install) do
         bin.install "agent"
       end
