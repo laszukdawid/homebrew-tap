@@ -1,6 +1,6 @@
 cask "k8s-tray-forwarder" do
-  version "0.3.0"
-  sha256 "f3ec89d4e56ed1d252c648a4a5dbf163b6a318df3bf6f0f7d6421d0a5d12ae2d"
+  version "0.3.1"
+  sha256 "11b15ab40914d9d6c05d3a4017cafbfa52bc323097c8451e34501c95c27d51fa"
 
   url "https://github.com/laszukdawid/k8s-tray-forwarder/releases/download/v#{version}/K8s-Port-Forwards_#{version}.zip"
   name "K8s Port Forwards"
