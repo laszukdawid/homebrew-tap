@@ -3,8 +3,8 @@
 # laszukdawid/homebrew-tap (see .github/workflows/release.yml). DO NOT EDIT the
 # copy in the tap by hand — regenerate from this template.
 cask "git-repo-tracker" do
-  version "0.2.1"
-  sha256 "dfccded31a5eb7b41cedb1325f8044408b78c91114cfcab8d446f1e79681d9eb"
+  version "0.3.0"
+  sha256 "1b931d8fca80b68e3eaf3a1273dd404678982d6b49f0b38096198bfc95f3be00"
 
   url "https://github.com/laszukdawid/git-repo-tracker/releases/download/v#{version}/git-repo-tracker_Darwin_universal.zip"
   name "git-repo-tracker"
